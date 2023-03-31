@@ -50,14 +50,22 @@ i=low + 1; //langkah 3
 j = high; //langlah 4
 pivot = arr[low]; //langkah 2
 
-	while(i <=j) //langkah 10
+while (i <= j) //langkah 10
+{
+	//search for an element greater than pivot
+	while ((arr[i] <= pivot) && (i <= high))//langkah 5
 	{
-		//search for an element greater than pivot
-		while ((arr[i] <= pivot) && (i <= high))//langkah 5
-		{
-			i++;//langkah6
-			cmp_count++;
-		}
+		i++;//langkah6
 		cmp_count++;
-		//search for an element less thanor eq
+	}
+	cmp_count++;
+	//search for an element less thanor equal to pivot
+	while ((arr[j] > pivot) && (j >= low))//langkah 7
+	{
+		j--;//langkah 8
+		cmp_count++;
+	}
+	cmp_count
+}
+			
 
