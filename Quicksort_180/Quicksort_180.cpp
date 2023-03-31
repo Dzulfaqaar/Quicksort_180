@@ -65,6 +65,17 @@ while (i <= j) //langkah 10
 		j--;//langkah 8
 		cmp_count++;
 	}
-	cmp_count
+	cmp_count++;
+	if (i < j)//langkah 9
+		//if greater element is on left of the element
+	{
+		//swap the element at indox i with the element at index j
+		swap(i, j);
+		mov_count++;
+	}
+	//sort the list on the left of pivot using quick sort
+	q_short(low, j - 1);//langkah 12
+	//sort the list on the right of pivot using quick short
+	q_short(j + 1, high);//langkah 13
 }
 			
