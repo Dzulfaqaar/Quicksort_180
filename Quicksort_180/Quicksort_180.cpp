@@ -68,4 +68,3 @@ while (i <= j) //langkah 10
 	cmp_count
 }
 			
-
